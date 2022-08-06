@@ -59,7 +59,9 @@ jobs:
         username: ${{ secrets.USER }}
         key: ${{ secrets.SSH_KEY }}
         script: |
-          cd infra
+          pwd
+          ls -ls
+          cd ../infra
           docker-compose up
           docker-compose exec web python manage.py collectstatic
           docker-compose exec web python manage.py makemigrations

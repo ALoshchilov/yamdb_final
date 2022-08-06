@@ -44,7 +44,8 @@ jobs:
       - name: Push to Docker Hub
         uses: docker/build-push-action@v2 
         with:
-          file: ./yamdb_final/Dockerfile
+          context: ./yamdb_final/
+          file: Dockerfile
           push: true
           tags: ${{ secrets.DOCKER_USERNAME }}/yamdb_final:latest 
   deploy:
@@ -72,4 +73,4 @@ jobs:
         to: ${{ secrets.TELEGRAM_TO }}
         token: ${{ secrets.TELEGRAM_TOKEN }}
         message: ${{ github.workflow }} успешно выполнен!
-#10
+#11

@@ -59,13 +59,15 @@ jobs:
         username: ${{ secrets.USER }}
         key: ${{ secrets.SSH_KEY }}
         script: |
-          pwd
-          ls -ls
-          cd ../infra
-          docker-compose up
-          docker-compose exec web python manage.py collectstatic
-          docker-compose exec web python manage.py makemigrations
-          docker-compose exec web python manage.py migrate
+          sudo docker pull ${{ secrets.DOCKER_USERNAME }}/yamdb_final
+          sudo docker-compose stop
+          sudo docker-compose rm web
+          sudo docker-compose up -d
+      #    cd ../infra
+      #    docker-compose up
+      #    docker-compose exec web python manage.py collectstatic
+      #    docker-compose exec web python manage.py makemigrations
+      #    docker-compose exec web python manage.py migrate
        
       # script: |
       #   sudo docker pull ${{ secrets.DOCKER_USERNAME }}/yamdb_final
@@ -82,4 +84,4 @@ jobs:
         to: ${{ secrets.TELEGRAM_TO }}
         token: ${{ secrets.TELEGRAM_TOKEN }}
         message: ${{ github.workflow }} успешно выполнен!
-#20
+#21

@@ -9,9 +9,6 @@ services:
       - ./.env
   
   web:
-    # build:
-    #   context: ../api_yamdb/
-    #   dockerfile: Dockerfile
     image: aloshchilov/yamdb_final
     restart: always
     volumes:
@@ -36,4 +33,3 @@ services:
 volumes:
   static_value:
   media_value:
-     

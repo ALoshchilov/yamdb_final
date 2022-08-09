@@ -9,9 +9,9 @@ from rest_framework import filters, viewsets
 from rest_framework.decorators import api_view, permission_classes
 from rest_framework.permissions import AllowAny
 from rest_framework.response import Response
-
 from reviews.models import Category, Genre, Review, Title
 from users.settings import USER
+
 from .filters import TitlesFilter
 from .permissions import AnyReadOnly, IsAdmin, UserAccountPermission
 from .serializers import (CategorySerializer, CommentSerializer,

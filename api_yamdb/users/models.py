@@ -1,8 +1,8 @@
+from api.settings import USER_ME
 from django.contrib.auth.models import AbstractUser
 from django.core.validators import EmailValidator
 from django.db import models
 
-from api.settings import USER_ME
 from .settings import ADMIN, MODERATOR, USER, USER_ROLES
 
 

@@ -15,6 +15,8 @@ def verify_credentials(username, confirmation_code):
     )
     if not confirmation_code == user.confirmation_code:
         raise serializers.ValidationError('Неверный код')
+    if not user.confirmation_code:
+        raise serializers.ValidationError('Код не может быть пустым')
     if user.confirmation_code:
         user.confirmation_code = 0
         user.save()

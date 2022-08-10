@@ -34,13 +34,13 @@ git push
 Клонировать репозиторий:
 
 ```
-git@github.com:ALoshchilov/infra_sp2.git
+git@github.com:ALoshchilov/yamdb_final.git
 ```
 
 Перейти в папку с файлом docker-compose.yaml:
 
 ```
-cd /c/Dev/infra_sp2/infra/
+cd /c/Dev/yamdb_final/infra/
 ```
 
 Запустить контейнеры приложения:

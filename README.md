@@ -5,6 +5,10 @@
 Произведению может быть присвоен жанр. Новые жанры может создавать только администратор системы.
 Благодарные или возмущённые пользователи оставляют к произведениям текстовые отзывы и ставят произведению оценку от одного до десяти; из пользовательских оценок формируется усреднённая оценка произведения — рейтинг. На одно произведение пользователь может оставить только один отзыв.
 
+Документация API доступна по ссылке: http://aloshchilov.hopto.org/redoc/
+Примеры вызовов API приведены в данном документе.
+
+
 ### Обновление приложения на продуктовом сервере:
 Произвести коммит произведенных в коде изменений:
 
@@ -229,7 +233,7 @@ YaMDB отправляет письмо с кодом подтверждения
 
 Пример URL:
 ```
-POST http://127.0.0.1/api/v1/auth/signup/
+POST http://aloshchilov.hopto.org/api/v1/auth/signup/
 ```
 
 Тело запроса:
@@ -253,7 +257,7 @@ POST http://127.0.0.1/api/v1/auth/signup/
 
 Пример URL:
 ```
-POST http://127.0.0.1/api/v1/auth/token/
+POST http://aloshchilov.hopto.org/api/v1/auth/token/
 ```
 
 Тело запроса:
@@ -276,7 +280,7 @@ POST http://127.0.0.1/api/v1/auth/token/
 
 Пример URL:
 ```
-GET http://127.0.0.1/api/v1/categories/
+GET http://aloshchilov.hopto.org/api/v1/categories/
 ```
 
 Ответ:
@@ -300,7 +304,7 @@ GET http://127.0.0.1/api/v1/categories/
 
 Пример URL:
 ```
-POST http://127.0.0.1/api/v1/categories/
+POST http://aloshchilov.hopto.org/api/v1/categories/
 ```
 
 Тело запроса:
@@ -324,7 +328,7 @@ POST http://127.0.0.1/api/v1/categories/
 
 Пример URL:
 ```
-DELETE http://127.0.0.1/api/v1/categories/{slug}/
+DELETE http://aloshchilov.hopto.org/api/v1/categories/{slug}/
 ```
 
 
@@ -332,7 +336,7 @@ DELETE http://127.0.0.1/api/v1/categories/{slug}/
 
 Пример URL:
 ```
-GET http://127.0.0.1/api/v1/genres/
+GET http://aloshchilov.hopto.org/api/v1/genres/
 ```
 
 Ответ:
@@ -356,7 +360,7 @@ GET http://127.0.0.1/api/v1/genres/
 
 Пример URL:
 ```
-POST http://127.0.0.1/api/v1/genres/
+POST http://aloshchilov.hopto.org/api/v1/genres/
 ```
 
 Ответ:
@@ -372,7 +376,7 @@ POST http://127.0.0.1/api/v1/genres/
 
 Пример URL:
 ```
-DELETE http://127.0.0.1/api/v1/genres/{slug}/
+DELETE http://aloshchilov.hopto.org/api/v1/genres/{slug}/
 ```
 
 
@@ -380,7 +384,7 @@ DELETE http://127.0.0.1/api/v1/genres/{slug}/
 
 Пример URL:
 ```
-GET http://127.0.0.1/api/v1/titles/
+GET http://aloshchilov.hopto.org/api/v1/titles/
 ```
 
 Ответ:
@@ -418,7 +422,7 @@ GET http://127.0.0.1/api/v1/titles/
 
 Пример URL:
 ```
-POST http://127.0.0.1/api/v1/titles/
+POST http://aloshchilov.hopto.org/api/v1/titles/
 ```
 
 Тело запроса:
@@ -460,7 +464,7 @@ POST http://127.0.0.1/api/v1/titles/
 
 Пример URL:
 ```
-POST http://127.0.0.1/api/v1/titles/{titles_id}/
+POST http://aloshchilov.hopto.org/api/v1/titles/{titles_id}/
 ```
 
 Ответ:
@@ -489,7 +493,7 @@ POST http://127.0.0.1/api/v1/titles/{titles_id}/
 
 Пример URL:
 ```
-PATCH http://127.0.0.1/api/v1/titles/{titles_id}/
+PATCH http://aloshchilov.hopto.org/api/v1/titles/{titles_id}/
 ```
 
 Тело запроса:
@@ -531,7 +535,7 @@ PATCH http://127.0.0.1/api/v1/titles/{titles_id}/
 
 Пример URL:
 ```
-PATCH http://127.0.0.1/api/v1/titles/{titles_id}/
+PATCH http://aloshchilov.hopto.org/api/v1/titles/{titles_id}/
 ```
 
 
@@ -539,7 +543,7 @@ PATCH http://127.0.0.1/api/v1/titles/{titles_id}/
 
 Пример URL:
 ```
-GET http://127.0.0.1/api/v1/titles/{title_id}/reviews/
+GET http://aloshchilov.hopto.org/api/v1/titles/{title_id}/reviews/
 ```
 
 Ответ:
@@ -567,7 +571,7 @@ GET http://127.0.0.1/api/v1/titles/{title_id}/reviews/
 
 Пример URL:
 ```
-POST http://127.0.0.1/api/v1/titles/{title_id}/reviews/
+POST http://aloshchilov.hopto.org/api/v1/titles/{title_id}/reviews/
 ```
 
 Тело запроса:
@@ -594,7 +598,7 @@ POST http://127.0.0.1/api/v1/titles/{title_id}/reviews/
 
 Пример URL:
 ```
-GET http://127.0.0.1/api/v1/titles/{title_id}/reviews/{review_id}/
+GET http://aloshchilov.hopto.org/api/v1/titles/{title_id}/reviews/{review_id}/
 ```
 Ответ:
 ```
@@ -612,7 +616,7 @@ GET http://127.0.0.1/api/v1/titles/{title_id}/reviews/{review_id}/
 
 Пример URL:
 ```
-PATCH http://127.0.0.1/api/v1/titles/{title_id}/reviews/{review_id}/
+PATCH http://aloshchilov.hopto.org/api/v1/titles/{title_id}/reviews/{review_id}/
 ```
 
 Тело запроса:
@@ -639,7 +643,7 @@ PATCH http://127.0.0.1/api/v1/titles/{title_id}/reviews/{review_id}/
 
 Пример URL:
 ```
-DELETE http://127.0.0.1/api/v1/titles/{title_id}/reviews/{review_id}/
+DELETE http://aloshchilov.hopto.org/api/v1/titles/{title_id}/reviews/{review_id}/
 ```
 
 
@@ -647,7 +651,7 @@ DELETE http://127.0.0.1/api/v1/titles/{title_id}/reviews/{review_id}/
 
 Пример URL:
 ```
-GET http://127.0.0.1/api/v1/titles/{title_id}/reviews/{review_id}/comments/
+GET http://aloshchilov.hopto.org/api/v1/titles/{title_id}/reviews/{review_id}/comments/
 ```
 
 Ответ:
@@ -674,7 +678,7 @@ GET http://127.0.0.1/api/v1/titles/{title_id}/reviews/{review_id}/comments/
 
 Пример URL:
 ```
-POST http://127.0.0.1/api/v1/titles/{title_id}/reviews/{review_id}/comments/
+POST http://aloshchilov.hopto.org/api/v1/titles/{title_id}/reviews/{review_id}/comments/
 ```
 
 Тело запроса:
@@ -699,7 +703,7 @@ POST http://127.0.0.1/api/v1/titles/{title_id}/reviews/{review_id}/comments/
 
 Пример URL:
 ```
-GET http://127.0.0.1/api/v1/titles/{title_id}/reviews/{review_id}/comments/{comment_id}/
+GET http://aloshchilov.hopto.org/api/v1/titles/{title_id}/reviews/{review_id}/comments/{comment_id}/
 ```
 
 Ответ:
@@ -717,7 +721,7 @@ GET http://127.0.0.1/api/v1/titles/{title_id}/reviews/{review_id}/comments/{comm
 
 Пример URL:
 ```
-PATCH http://127.0.0.1/api/v1/titles/{title_id}/reviews/{review_id}/comments/{comment_id}/
+PATCH http://aloshchilov.hopto.org/api/v1/titles/{title_id}/reviews/{review_id}/comments/{comment_id}/
 ```
 
 Тело запроса:
@@ -742,7 +746,7 @@ PATCH http://127.0.0.1/api/v1/titles/{title_id}/reviews/{review_id}/comments/{co
 
 Пример URL:
 ```
-DELETE http://127.0.0.1/api/v1/titles/{title_id}/reviews/{review_id}/comments/{comment_id}/
+DELETE http://aloshchilov.hopto.org/api/v1/titles/{title_id}/reviews/{review_id}/comments/{comment_id}/
 ```
 
 
@@ -750,7 +754,7 @@ DELETE http://127.0.0.1/api/v1/titles/{title_id}/reviews/{review_id}/comments/{c
 
 Пример URL:
 ```
-GET http://127.0.0.1/api/v1/users/
+GET http://aloshchilov.hopto.org/api/v1/users/
 ```
 
 Ответ:
@@ -779,7 +783,7 @@ GET http://127.0.0.1/api/v1/users/
 
 Пример URL:
 ```
-POST http://127.0.0.1/api/v1/users/
+POST http://aloshchilov.hopto.org/api/v1/users/
 ```
 
 Тело запроса:
@@ -811,7 +815,7 @@ POST http://127.0.0.1/api/v1/users/
 
 Пример URL:
 ```
-GET http://127.0.0.1/api/v1/users/{username}/
+GET http://aloshchilov.hopto.org/api/v1/users/{username}/
 ```
 
 Ответ:
@@ -831,7 +835,7 @@ GET http://127.0.0.1/api/v1/users/{username}/
 
 Пример URL:
 ```
-PATCH http://127.0.0.1/api/v1/users/{username}/
+PATCH http://aloshchilov.hopto.org/api/v1/users/{username}/
 ```
 
 Тело запроса:
@@ -863,7 +867,7 @@ PATCH http://127.0.0.1/api/v1/users/{username}/
 
 Пример URL:
 ```
-DELETE http://127.0.0.1/api/v1/users/{username}/
+DELETE http://aloshchilov.hopto.org/api/v1/users/{username}/
 ```
 
 
@@ -871,7 +875,7 @@ DELETE http://127.0.0.1/api/v1/users/{username}/
 
 Пример URL:
 ```
-GET http://127.0.0.1/api/v1/users/me/
+GET http://aloshchilov.hopto.org/api/v1/users/me/
 ```
 
 Ответ:
@@ -891,7 +895,7 @@ GET http://127.0.0.1/api/v1/users/me/
 
 Пример URL:
 ```
-PATCH http://127.0.0.1/api/v1/users/me/
+PATCH http://aloshchilov.hopto.org/api/v1/users/me/
 ```
 
 Тело запроса:
@@ -916,3 +920,7 @@ PATCH http://127.0.0.1/api/v1/users/me/
   "role": "user"
 }
 ```
+
+### Информация об авторе
+Александр Лощилов.
+Студент "Яндекс.Практикум" факультета "Python-разработчик плюс", когорта 10.
